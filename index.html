@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Task Toe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="d-flex ai-c jc-sb">
+              <div class="logo cus-p">Tic Task Toe</div>
+              <div class="change-mode-parent br-50 cus-p d-flex center">
+                <section class="change-mode br-50"></section>
+              </div>
+            </nav>
+        </header>
+        <main class="d-flex ai-c fd-c">
+            <div class="app-wrapper">
+                <form class="card">
+                    <h1 class="tasks-head">Task List</h1>
+                    <section class="task-collection">
+                        <input type="text" name="input-task" id="input-task" placeholder="Kick some butts...">
+                    </section>
+                    <button type="submit" class="clear-tasks add-tasks">Add Tasks</button>
+                </form>
+                <section class="task-collection">
+                    <input type="text" name="filter-task" id="filter-task" placeholder="Search tasks...">
+                </section>
+                <section class="task-section">
+                    <h1 class="task-section-head">Tasks</h1>
+                    <ul class="task-list-items"></ul>
+                    <button type="button" class="clear-tasks clear-button">Clear Tasks</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="copyright-section">&copy;2023 Bacode Inc.</div>
+        </footer>
+    </div>
+    <script src="javascript/app.js"></script>
+</body>
+</html>

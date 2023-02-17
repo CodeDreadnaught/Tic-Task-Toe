@@ -1,0 +1,184 @@
+@import url("utility.css");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+:root {
+    --bacode-transition: 0.5s linear;
+    --bacode-black: #000000;
+    --bacode-white: #ffffff;
+    --bacode-green: #008000;
+    --bacode-red: #ff0000;
+}
+body {
+    font-size: 1em;
+    font-family: "Nunito";
+}
+nav {
+    height: 65px;
+    padding: 0 40px;
+}
+.logo {
+    font-size: 1.05em;
+}
+.logo:hover {
+    color: var(--bacode-green);
+}
+.change-mode-parent {
+    border: 1px dotted var(--bacode-black);
+    height: 30px;
+    width: 30px;
+}
+.change-mode {
+    border: 1px dotted var(--bacode-black);
+    height: 20px;
+    width: 20px;
+    background: var(--bacode-black);
+}
+.change-mode-parent:hover {
+    position: relative;
+    bottom: 5px;
+    transition: var(--bacode-transition);
+}
+main {
+    min-height: 80vh;
+    padding-top: 15px;
+}
+.app-wrapper {
+    border: 1px solid gray;
+    padding: 12px;
+    border-radius: 8px;
+}
+.card {
+    height: 180px;
+    width: 900px;
+}
+.tasks-head {
+    text-align: center;
+}
+.task-collection {
+    padding: 10px 0px;
+    height: 60px;
+}
+.task-collection > input {
+    width: 95%;
+    height: 30px;
+    outline: none;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid grey;
+    background: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.task-collection > input::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+}
+button {
+    all: unset;
+}
+.clear-tasks {
+    text-align: center;
+    background: var(--bacode-green);
+    font-size: 0.75em;
+    border-radius: 2px;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.clear-tasks:hover {
+    font-weight: bold;
+    opacity: 0.75;
+    transition: 0.5s linear;
+}
+.clear-button {
+    background: var(--bacode-red);
+    margin-bottom: 5px;
+}
+.task-section {
+    width: 900px;
+}
+.task-section-head {
+    font-size: 1.1em;
+    padding-top: 20px;
+    font-weight: 500;
+}
+.task-list-items {
+    padding: 10px 0;
+}
+.list-item {
+    list-style-type: none;
+    border: 1px solid black;
+    min-height: 30px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.list-item:not(:last-child) {
+    border-bottom: none;
+}
+.cancel-button {
+    color: red;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+body.dark {
+    background: var(--bacode-black);
+}
+.logo.dark {
+    color: var(--bacode-white);
+    transition: var(--bacode-transition);
+}
+.logo.dark:hover {
+    color: #39f;
+    transition: var(--bacode-transition);
+}
+.change-mode-parent.dark {
+    border: 1px dotted var(--bacode-white);
+    transition: var(--bacode-transition);
+}
+.change-mode.dark {
+    background: var(--bacode-white);
+    transition: var(--bacode-transition);
+}
+.clear-tasks.dark {
+    transition: var(--bacode-transition);
+}
+ul > .list-item.dark {
+    border: 1px solid var(--bacode-white);
+    color: var(--bacode-white);
+    transition: var(--bacode-transition);
+}
+.list-item.dark:not(:last-child) {
+    border-bottom: none;
+}
+footer.dark, .tasks-head.dark, .task-collection.dark > input, .task-collection.dark > input::placeholder, .task-section-head.dark {
+    color: var(--bacode-white);
+    transition: var(--bacode-transition);
+}
+@media (200px <= width <= 768px) {
+    .card {
+        height: 160px;
+        width: 300px;
+    }
+    .clear-tasks {
+        font-size: 0.7em;
+        width: 80px;
+        height: 28px;
+    }
+    .clear-button {
+        width: 105px;
+    }
+    .task-section {
+        width: 300px;
+    }
+}
