@@ -155,7 +155,7 @@ function deleteTaskFromLocalStorage(taskToBeDeleted) {
     });
     localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-(() => {
+(function loadAllEventListners() {
     modeChanger.addEventListener("click", darkMode);
     card.addEventListener("submit", addTask);
     taskSection.addEventListener("click", deleteTask);

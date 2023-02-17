@@ -166,7 +166,7 @@ footer.dark, .tasks-head.dark, .task-collection.dark > input, .task-collection.d
     color: var(--bacode-white);
     transition: var(--bacode-transition);
 }
-@media (200px <= width <= 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
     .card {
         height: 160px;
         width: 300px;
