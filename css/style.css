@@ -167,6 +167,9 @@ footer.dark, .tasks-head.dark, .task-collection.dark > input, .task-collection.d
     transition: var(--bacode-transition);
 }
 @media screen and (min-width: 200px) and (max-width: 768px) {
+    nav {
+        padding: 0 20px;
+    }
     .card {
         height: 160px;
         width: 300px;
